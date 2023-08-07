@@ -1,6 +1,6 @@
 <div align="center">
-  <img width="200" height="200" src="Recursos/logo/logo%20animatch.png" alt="Animatch Logo">
-  <h1 style="font-weight: bold; font-style: italic;">Animatch</h1>
+  <img width="300" height="300" src="Recursos/logo/logo%20animatch.png" alt="Animatch Logo">
+  <h1 style="font-weight: bold;"><em>Animatch</em></h1>
 </div>
 
 ![STATUS](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-green)
@@ -13,7 +13,7 @@
   <img src="Recursos/mockups/MARCOSolo%20phone%20chats.png">
 </div>
 
-<h3 align="center">¡Bienvenido a Animatch!</h3>
+<h3 style="font-size: 20px;" align="center">¡Bienvenido a Animatch!</h3>
 
 <p align="center"> Encuentra el amor para tu leal compañero<br>
   ❤¡Regístrate ahora y permite que tus mascotas encuentren el verdadero amor!❤<br>
@@ -21,7 +21,7 @@
   ¡Únete ahora!
 </p>
 
-<h4 align="center">Our Team is Composed by:</h4>
+<h4 style="font-size: 20px;" align="center">Our Team is Composed by:</h4>
 <p align="center">
   Agustina Barbona [GitHub](https://github.com/AgusBarbona)<br>
   Ana Zanardi [GitHub](https://github.com/ZanardiAnA)<br>
