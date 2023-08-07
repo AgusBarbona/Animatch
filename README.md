@@ -5,7 +5,7 @@
 
 ![STATUS](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-green)
 
-<h2 style="text-align: center; font-size: 24px;">Previews:</h2>
+<h2 style="font-size: 24px;">Previews:</h2>
 <div style="text-align: center;">
   <img src="Recursos/mockups/MARCOSolo%20phone%20pricipal.png">
 </div>
@@ -29,8 +29,8 @@
   Miembro 3 [GitHub](https://github.com)
 </p>
 
-<p align="center">
-![github-blanco](Recursos/iconos/github-blanco.png) [GitHub](https://github.com)<br>
+
+![github-blanco](Recursos/iconos/github-blanco.png) [GitHub](https://github.com/AgusBarbona/Animatch)<br>
 ![figma](Recursos/iconos/figma.png) [Figma](https://www.figma.com/file/3JQHne2HlpGAI70QtZFGpc/Animatch?type=design&node-id=4-2&mode=design&t=h7XtKARUvFfWrx5b-0)<br>
 ![trello](Recursos/iconos/trello.png) [Trello](https://trello.com/b/FMboNN42/tinder)
-</p>
+
