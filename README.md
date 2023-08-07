@@ -13,10 +13,19 @@
   <img src="Recursos/mockups/MARCOSolo%20phone%20chats.png">
 </div>
 
+<h4 align="center">¡Welcome to Animatch!</h4>
+
+<p align="center"> Find love for your loyal companion<br>
+  ❤Sign up now and let your pets find true love❤<br>
+    Discover the magic of Animatch today.<br>
+  ¡Join now!
+</p>
+
+
 <h3 style="font-size: 20px;" align="center">¡Bienvenido a Animatch!</h3>
 
 <p align="center"> Encuentra el amor para tu leal compañero<br>
-  ❤¡Regístrate ahora y permite que tus mascotas encuentren el verdadero amor!❤<br>
+  ❤Regístrate ahora y permite que tus mascotas encuentren el verdadero amor❤<br>
   Descubre la magia de Animatch hoy mismo.<br>
   ¡Únete ahora!
 </p>
