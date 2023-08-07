@@ -41,5 +41,5 @@
 <div align="center">
   <img src="Recursos/iconos/github-blanco.png"> <a href="https://github.com/AgusBarbona/Animatch">GitHub</a><br>
   <img src="Recursos/iconos/figma.png"> <a href="https://www.figma.com/file/3JQHne2HlpGAI70QtZFGpc/Animatch?type=design&node-id=4-2&mode=design&t=h7XtKARUvFfWrx5b-0">Figma</a><br>
-  <img src="Recursos/iconos/trello.png"> <a href="https://trello.com/b/FMboNN42/tinder">Trello</a>
+  <img src="Recursos/iconos/trello.png"> <a href="https://trello.com/b/FMboNN42/animatch">Trello</a>
 </div>
