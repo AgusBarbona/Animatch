@@ -24,9 +24,9 @@
 <h4 align="center">Our Team is Composed by:</h4>
 <p align="center">
   Agustina Barbona [GitHub](https://github.com/AgusBarbona)<br>
-  Ana Zanardi [GitHub](https://github.com)<br>
-  Miembro 2 [GitHub](https://github.com)<br>
-  Miembro 3 [GitHub](https://github.com)
+  Ana Zanardi [GitHub](https://github.com/ZanardiAnA)<br>
+  Arleth Cordero [GitHub](https://github.com/Arleth-cordero20)<br>
+  Daniela Fernandez Laura [GitHub](https://github.com/arianaseok)
 </p>
 
 <div align="center">
