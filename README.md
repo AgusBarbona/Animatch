@@ -1,15 +1,15 @@
-<div style="text-align: center;">
+<div align="center">
   <img width="200" height="200" src="Recursos/logo/logo%20animatch.png" alt="Animatch Logo">
   <h1 style="font-weight: bold; font-style: italic;">Animatch</h1>
 </div>
 
 ![STATUS](https://img.shields.io/badge/STATUS-IN%20DEVELOPMENT-green)
 
-<h2 style="font-size: 24px; text-align: center;">Previews:</h2>
-<div style="text-align: center;">
+<h2 style="font-size: 24px;" align="center">Previews:</h2>
+<div align="center">
   <img src="Recursos/mockups/MARCOSolo%20phone%20pricipal.png">
 </div>
-<div style="text-align: center;">
+<div align="center">
   <img src="Recursos/mockups/MARCOSolo%20phone%20chats.png">
 </div>
 
@@ -29,7 +29,7 @@
   Miembro 3 [GitHub](https://github.com)
 </p>
 
-<div style="text-align: center;">
+<div align="center">
   <img src="Recursos/iconos/github-blanco.png"> <a href="https://github.com/AgusBarbona/Animatch">GitHub</a><br>
   <img src="Recursos/iconos/figma.png"> <a href="https://www.figma.com/file/3JQHne2HlpGAI70QtZFGpc/Animatch?type=design&node-id=4-2&mode=design&t=h7XtKARUvFfWrx5b-0">Figma</a><br>
   <img src="Recursos/iconos/trello.png"> <a href="https://trello.com/b/FMboNN42/tinder">Trello</a>
