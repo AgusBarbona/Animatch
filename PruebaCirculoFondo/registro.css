@@ -80,16 +80,18 @@
     margin: 20px 0;
   }
   button {
-    width: 100%;
+    width: 50%;
     background-color: #FFB8AE;
     color: #c82711;
     border-radius: 20px;
     border-color: #c82711;
     font-size: 20px;
     padding: 8px 10px;
+    margin-top: 20px;
   }
     a{
-      color: black;
+      color: rgb(38, 17, 230);
       font-size: 15px;
+      text-align: center;
     }
   
