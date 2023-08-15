@@ -28,9 +28,10 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
   .name{
+    color: white;
       font-size: 20px;
       font-weight: bolder;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5);
+     
       position: absolute;
       top: 110px;
       left: 50%;
@@ -53,7 +54,7 @@
   }
   
    form {
-    background-color: rgb(175, 173, 170);
+    background-color: rgba(177, 174, 170, 0.589);
     border-radius: 15px;
     padding: 30px;
     margin: 0 auto;
@@ -90,7 +91,7 @@
     margin-top: 20px;
   }
     a{
-      color: rgb(38, 17, 230);
+      color: rgb(7, 7, 7);
       font-size: 15px;
       text-align: center;
     }
