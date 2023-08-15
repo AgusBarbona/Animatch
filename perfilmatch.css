@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(0deg,#c82711, #FFB8AE );
+}
+/*
+#swiper{
+    height: 65vh;
+    aspect-ratio: 2 / 3;
+    perspective: 1000px;
+    perspective-origin: center 50%;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card{
+    width: 80%;
+    margin-left: 34px;
+    height: 95%;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px;
+   transform: translateZ(calc(-30px * var(--i)))
+     translateY(calc(0px * var(--i))) ;
+    filter: drop-shadow(1px 1px 20px rgb(31, 27, 27));
+    cursor: pointer; 
+    user-select: none;
+    transition: transform 0.5s;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    
+}
+
+.card .info{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    color: rgb(255, 255, 255);
+    
+  }
+.card  .info .tituloh2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-family: 'Dancing Script';
+  } 
+ 
+
+
+
+  #like,
+  #dislike {
+    
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    animation-name: animation1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    /* don't run animation at the beginning
+    animation-play-state: paused;
+  }
+  
+  #like.trigger,
+  #dislike.trigger {
+    animation-name: animation2;
+  }
+  
+  #like {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+  }
+#likex{
+    width:100%;
+    height:100% ;
+  font-size: 50%;
+}
+
+  
+  #dislike {
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  @keyframes animation1 {
+  
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes animation2 {
+  
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+
+
+}
+*/
+body {
+  font-family: Arial, sans-serif;
+ 
+
+  background-color: #f2f2f2;
+}
+h1{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  color: #f2f2f2;
+  font-size: 50px;
+  margin-left: 10px;
+  margin-top: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 5px black;
+}
+
+.logo img{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+ 
+}
+
+
+.swipe-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  
+  overflow: hidden;
+  cursor: grab;
+  transform: translateX(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.swipe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.377);
+  color: white;
+  
+}
+
+.card-text {
+  font-size: 40px;
+  text-align: left;
+ margin: 10px;
+}
+.text{
+  margin: 10px;
+}
+
+
+@media screen and (min-width: 780px){  
+   body{
+    background: #615555;
+   }
+
+   .logo, h1 {
+    display: none;
+   }
+   .chat{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+   }
+   .chat div{
+    background: linear-gradient(0deg,#c82711, #FFB8AE );
+    height: 10%;
+
+   }
+   .chat div img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+   }
+   span{
+    position: relative;
+    top: -25px;
+    color: white;
+    margin: 10px;
+   }
+    .fire{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 80%;
+   
+   }
+  
+   .swipe-container {
+    position: relative;
+    width: 300px;
+    height: 550px;
+    overflow: hidden;
+    box-shadow: 10px 15px 90px rgb(0, 0, 0);
+    border-radius: 10px;
+    position: relative;
+    left: 22%;
+    
+
+  
+  }
+}
+
+@media screen and (max-width: 780px){
+  .chat {
+    display: none;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .swipe-container {
+    position: relative;
+    width: 300px;
+    height: 550px;
+    overflow: hidden;
+     box-shadow: 10px 15px 90px rgb(0, 0, 0);
+     border-radius: 10px;
+     margin-top: 30px;
+  
+  }
+}
