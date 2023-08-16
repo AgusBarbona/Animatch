@@ -93,10 +93,37 @@
      a{
       color: rgb(3, 3, 3);
       font-size: 15px;
+      padding: 10px 10px;
     }
     p{
       color: blue;
       font-size: 10px;
     }
 
+    @media screen and (min-width: 480px) {
+     button{
+      width: 30%;
+     }
+    }
+    @media screen and (min-width: 768px){
+     button {
+      width: 20%;
+      }
+      .semicircle {
+        width: 110%;
+        height: 22rem;
+        margin-bottom: 5rem;
+        border-radius: 0 0 50% 50%;
+      }
+      .circle-img {
+        width: 120px;
+        height: 120px;
+        margin: 80px auto;
+      }
+      .name {
+        font-size: x-large;
+        margin: 100px auto;
+        padding: 40px;
+      }
     
+    }
