@@ -6,7 +6,7 @@
  <div>
    <h1>Animatch</h1>
 
-    <div class="logo"><img  src="./assets/img/logoanimatch.png"></div>
+    <div class="logo"><img  src="./assets/img/logo animatch.png"></div>
     <div class="nav">hola</div> 
     <div class="swipe-container">
       <div class="swipe-card">
