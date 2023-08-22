@@ -1,0 +1,148 @@
+
+<template>
+<div>
+<div class="semicircle">
+       <div class="circle-img"></div>
+       <h1 class="name">Iniciar Sesion</h1>
+   </div>
+
+ <form action="">
+    <div>
+        <label for="email">Email:</label>
+        <input type="email">
+
+        <label for="psw">Contraseña:</label>
+        <input type="password">
+        <p>¿Olvidaste tu contraseña?</p>
+    </div> 
+</form>
+ 
+<button type="submit">Inciar sesion</button><br>
+    <a href="Registro.html">Crea una Nueva cuenta</a>
+</div>
+</template>
+
+<style>
+body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #FFB8AE; 
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .semicircle{
+        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 100vw;
+        height: 15rem;
+        background: linear-gradient(to bottom, var(--rosita), white);
+        border-radius: 0 0 50vw 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .name{
+        font-size: 20px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5);
+        position: absolute;
+        top: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  
+    .circle-img {
+      width: 80px;
+      height: 80px;
+      margin-top: 20px;
+      background-image: url('./assets/Recursos/logo/logo animatch.png');
+      background-size: cover;
+      background-color: var(--rosita);
+      background-position: center;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+   form {
+    background-color: rgba(138, 132, 132, 0.514);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    top: auto;
+   }
+   
+   input {
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2em;
+    margin: 15px 0;
+  }
+  label{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  button {
+
+    width: 50%;
+    background-color: #c82711;
+    color: white;
+    border-radius: 20px;
+    border-color: #f0f0f0;
+    font-size: 20px;
+    padding: 8px 10px;
+    margin-top: 30px;
+  }
+     a{
+      color: rgb(3, 3, 3);
+      font-size: 15px;
+      padding: 10px 10px;
+    }
+    p{
+      color: blue;
+      font-size: 10px;
+    }
+
+    @media screen and (min-width: 480px) {
+     button{
+      width: 50%;
+     }
+    }
+    @media screen and (min-width: 768px){
+     button {
+      width: 50%;
+      }
+      /*.semicircle {
+        width: 100%;
+        height: 22rem;
+        margin-bottom: 5rem;
+        border-radius: 0 0 50% 50%;
+      }
+      .circle-img {
+        width: 120px;
+        height: 120px;
+        margin: 80px auto;
+      }
+      .name {
+        font-size: x-large;
+        margin: 100px auto;
+        padding: 40px;
+      }*/
+    
+    }
+</style>
