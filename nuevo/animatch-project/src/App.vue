@@ -1,26 +1,18 @@
 <template>
   <div id="app">
     <NavDesplegable />
-    <AnimatchHeader />
-    <BienvenidaText />
-    <BotonesPrincipal />
+    <router-view />
     <FooterCopy />
   </div>
 </template>
 
 <script>
 import NavDesplegable from './components/principal/NavDesplegable.vue'
-import AnimatchHeader from './components/principal/AnimatchHeader.vue'
-import BienvenidaText from './components/principal/BienvenidaText.vue'
-import BotonesPrincipal from './components/principal/BotonesPrincipal.vue'
 import FooterCopy from './components/principal/FooterCopy.vue'
 
 export default {
   components: {
     NavDesplegable,
-    AnimatchHeader,
-    BienvenidaText,
-    BotonesPrincipal,
     FooterCopy,
   }
 }

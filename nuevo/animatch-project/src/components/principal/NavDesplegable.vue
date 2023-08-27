@@ -9,26 +9,26 @@
             <span class="brand-name">Animatch</span>
         </div>
         
-        <a href="#inicio" class="detailed-menu-item">
+        <router-link to="/home" class="detailed-menu-item">
             <img :src="logoAnimatch" alt="Inicio" class="icon-img">
             <span class="section-name">Inicio</span>
-        </a>
-        <a href="#Match" class="detailed-menu-item">
+        </router-link>
+        <router-link to="/matchs" class="detailed-menu-item">
             <img :src="favoritos" alt="Matchs" class="icon-img">
             <span class="section-name">Matchs</span>
-        </a>
-        <a href="#Chats" class="detailed-menu-item">
+        </router-link>
+        <router-link to="/chats" class="detailed-menu-item">
             <img :src="chat" alt="Chats" class="icon-img">
             <span class="section-name">Chats</span>
-        </a>
-        <a href="#Soporte" class="detailed-menu-item">
+        </router-link>
+        <router-link to="/soport" class="detailed-menu-item">
             <img :src="pregunta" alt="Soporte" class="icon-img">
             <span class="section-name">Soporte</span>
-        </a>
-        <a href="#MiCuenta" class="detailed-menu-item">
+        </router-link>
+        <router-link to="/micuenta" class="detailed-menu-item">
             <img :src="usuario" alt="MiCuenta" class="icon-img">
             <span class="section-name">Mi Cuenta</span>
-        </a>
+        </router-link>
 
         <div class="social-section">
             <a :href="trelloUrl" target="_blank">

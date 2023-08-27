@@ -19,7 +19,12 @@
   }
   </script>
 
-
+<!--<template>
+    <div class="buttons">
+      <router-link to="/register" tag="button" class="boton-Registro">Crear Cuenta</router-link>
+      <router-link to="/login" tag="button" class="boton-Iniciar">Iniciar Sesión</router-link>
+    </div>
+</template>-->
 
 <style scoped>
 *{
