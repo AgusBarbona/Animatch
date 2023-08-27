@@ -106,7 +106,7 @@
 
 <style scoped>
 * {
-    margin: 0;
+    margin-left: 20%;
     padding: 0;
     box-sizing: border-box; 
 }
@@ -209,6 +209,9 @@
 
 /* Estilos para pantallas más grandes (ejemplo: tablets y desktop) */
 @media (min-width: 768px) {
+    * {
+    margin-left: 0;
+    }
     .circle-image {
         width: 100px;
         height: 100px;
