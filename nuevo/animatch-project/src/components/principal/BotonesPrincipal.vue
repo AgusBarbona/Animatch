@@ -1,7 +1,12 @@
 <template>
     <div class="buttons">
-      <button class="boton-Registro" href="#">Crear Cuenta</button>
-      <button class="boton-Iniciar"  href="#">Iniciar Sesión</button>
+        <router-link to="/registro" class="buttons">
+            <button class="boton-Registro">Crear Cuenta</button>
+        </router-link>
+        <router-link to="/login" class="buttons">
+            <button class="boton-Iniciar">Iniciar Sesión</button>
+        </router-link>
+     
     </div>
   </template>
   
