@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+
+:root {
+    --rojoOscuro: #c82711;
+    --rosita: #FFB8AE;
+    --azulVinculos: #0075CA;
+}
+
+.semicircle {
+    position: relative;
+    background: linear-gradient(to bottom, var(--rosita), var(--rojoOscuro));
+    height: 40vh;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 50% 48%;
+    border-bottom-right-radius: 50% 48%;
+  }
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    background-image: url('/nuevo/Recursos/logo/logo\ animatch.png');
+    background-size: cover;
+    background-color: var(--rosita);
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+.name {
+    font-family: 'Merienda One', cursive;
+    font-size: large;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0.5, 0.5);
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+.bienvenida {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 40px;
+    margin: auto;
+}
+
+/* Estilos para el párrafo */
+.bienvenida p {
+    text-align: center;
+    font-size: 20px; 
+    color: #333;
+    max-width: 80%; 
+    line-height: 1.5;
+}
+.buttons {
+    text-align: center;
+}
+
+.boton-Registro,
+.boton-Iniciar {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s; 
+    border: 3px solid;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.boton-Registro:active,
+.boton-Iniciar:active {
+    transform: scale(0.95); /* Aplica una transformación de escala en el estado activo */
+}
+
+.boton-Registro {
+    background-color: var(--rojoOscuro);
+    border-color: var(--rosita);
+}
+
+.boton-Iniciar {
+    background-color: var(--rosita);
+    border-color: var(--rojoOscuro);
+}
+
+
+.copy {
+   text-align: center;
+   margin: 20px;
+   color: var(--azulVinculos);
+}
+
+@media (min-width: 768px) {
+    .bienvenida {
+        padding: 40px; /* Ajusta el padding para la versión web */
+    }
+
+    .boton-Registro,
+    .boton-Iniciar {
+        display: inline-block;
+        width: auto;
+        margin: 50px ; /* Ajusta los márgenes superior e inferior */
+        padding: 20px;
+    }
+}
