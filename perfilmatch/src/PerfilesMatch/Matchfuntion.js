@@ -1,8 +1,7 @@
 import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
+import Match from './Match.vue'
 
-createApp(App).mount('#app')
+createApp(Match).mount('#app')
 
 
 const container = document.querySelector('.swipe-container');
