@@ -4,6 +4,7 @@ import AppSoport from '@/soport/AppSoport.vue';
 import HomePage from '@/components/HomePage.vue';
 import IniciarSesion from '@/Login/IniciarSesion.vue';
 import CrearCuenta from '@/Registro/CrearCuenta.vue';
+import Profile from '@/Profile/UserProfile.vue';
 
 const routes = [
     { path: '/', component: App },  
@@ -11,6 +12,7 @@ const routes = [
     { path: '/home', component: HomePage },
     { path: '/login', component: IniciarSesion },
     { path: '/registro', component: CrearCuenta },
+    { path: '/micuenta', component: Profile},
 ];
 
 const router = createRouter({
