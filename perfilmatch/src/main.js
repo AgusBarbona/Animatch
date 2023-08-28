@@ -5,8 +5,6 @@ import App from './App.vue'
 createApp(App).mount('#app')
 
 
-
-
 const container = document.querySelector('.swipe-container');
 const cards = document.querySelectorAll('.swipe-card');
 let isDragging = false;
@@ -78,9 +76,9 @@ if (offsetX > container.clientWidth * 0.25) {
 
 container.addEventListener('mouseleave', dragEnd);
 
+/*
 
-
-/*const container = document.querySelector('.swipe-container');
+const container = document.querySelector('.swipe-container');
 const cards = document.querySelectorAll('.swipe-card');
 let isDragging = false;
 let startPosX = 0;
