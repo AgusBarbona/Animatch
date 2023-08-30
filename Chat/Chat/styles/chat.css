@@ -1,0 +1,201 @@
+/*IMPORTACION DE FUENTES*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&display=swap');
+/*Estilo para toda la pagina*/
+:root{
+    --Blanco: #FFFFFF;
+    --SalmonClaro: #FFF9F8;
+    --SalmonMedio: #FFDDD9;
+    --RojoOscuro: #C82711;
+    --Rojo:  #FF5454;
+    --Naranja: #F57D26;
+    --Verde: #26F52E;
+    --Celeste: #26C3F5;
+    --Violeta: #9A26F5;
+    --Azul: #0075CA;
+    --RosaOpaco: #c9a6a663;
+    --Gris: #26262664;
+    --Perla:  #F6F4EF;
+    --Negro: #302929;
+    --RosaClaro: #fe7f7d39;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+body{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.msjUserView{
+    width: 35vw;
+    background-color: var(--Perla);
+    border-right: 1px solid #FF5454;
+}
+
+.msjUserView header {
+    display: flex;
+    background: linear-gradient(0deg, #ff6c6c, #facec9);
+    height: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 38px;
+    border-bottom: 1px solid #ff5c6c;
+}
+
+.msjUserView header h1{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.msjUserView header img{
+    width: 45px;
+    filter:opacity(0.7);
+}
+
+.msjUserView main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.msjsUser{
+    width: 28vw;
+    height: 5.5vw;
+    border-radius: 12px;
+    background-color: var(--RosaOpaco);
+    border-bottom: 1px solid var(--Gris);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    flex: 1;
+}
+
+.msjUserImg, .imgUserChat{
+    max-width: 5vw;
+    max-height: 5vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.msjUserImg img, .msjUserTextLogo img, .imgUserChat img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.msjUserText{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: var(--Negro);
+    padding-left: 18px;
+    font-size: 0.8rem;;
+}
+
+.msjUserText h2, .chatUser header h2 {
+    font-family: 'Merienda', cursive;
+    color: black;
+    padding-bottom: 6px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+.msjUserTextLogo{
+    max-width: 1.9vw;
+    max-height: 3.1vw;
+    display: flex;
+    align-self: end;
+    margin-left: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.logSupport{
+    display: none;
+}
+
+.chatUser{
+    width: 65vw;
+    background-color: var(--Perla);
+}
+
+.chatUser header{
+    height: 65px;
+    background-color: var(--RosaClaro);
+    padding: 2px 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid var(--RosaClaro);
+    flex: 1;
+}
+
+
+.chatUser header h2{
+    padding-left: 15px;
+}
+
+
+
+
+
+
+@media (max-width: 550px) {
+    .msjUserText{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .chatUser {
+        display: none;
+    }
+
+    .logSupport{
+        display: inline-block;
+    }
+
+    .msjUserView{
+        width:100%;
+    }
+
+    .msjsUser{
+        width: 75%;
+    }
+
+    .msjUserTextLogo{
+        max-width: 5vw;
+        max-height: 3vw;
+    }
+
+    .msjUserImg{
+        max-width: 13vw;
+        max-height: 13vw;
+    }
+
+    
+
+}
+
+@media (min-width: 761px) and (max-width: 1020px){
+    .msjUserTextLogo{
+        max-width: 2.3vw;
+        max-height: 2.3vw;
+    }
+}
