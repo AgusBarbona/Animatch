@@ -38,7 +38,7 @@
 .titleWithIcon{
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     font-size: 1.1rem;
     padding-bottom: 20px;
