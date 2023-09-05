@@ -10,7 +10,7 @@ app.config.globalProperties.$axios = axios; // Agrega Axios como una propiedad g
 app.mixin({//Los mixins son una forma de compartir opciones entre múltiples componentes en Vue.
   methods: {
     fetchDataFromBackend() {
-      axios.get('http://localhost:3000/api/ejemplo')
+      axios.get('http://localhost:3000/ejemplo')
         .then(response => {
           console.log(response.data);
         })
