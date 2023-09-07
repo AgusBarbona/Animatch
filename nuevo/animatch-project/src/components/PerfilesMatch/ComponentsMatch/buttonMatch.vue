@@ -1,12 +1,12 @@
 
 <template>
     <div id="button">
-      <button @click="moverIzquierda"><img src="../img/eliminar.png"></button>
-      <button @click="moverDerecha"><img src="../img/favoritos.png"></button>
+        <button><img src="../img/eliminar.png" alt="butonelim"></button>
+        <button><img src="../img/favoritos.png" alt="butonfav"></button>
     </div>
-  </template>
-  
-  <script>
+</template>
+
+<script>
 
 export default { 
     name: 'MatchButton',
@@ -21,6 +21,6 @@ export default {
 }; 
 </script>
 
-<style lang="scss">
- @import '../perfilMatch.scss';
-</style>
+
+
+
