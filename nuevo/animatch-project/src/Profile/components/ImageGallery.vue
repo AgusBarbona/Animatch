@@ -1,8 +1,11 @@
 <template>
     <section class="userPhotos">
             <div class="titleWithIcon">
-                <img class="icons" src="../img/LogodeImagen.png" alt="images icon">
-                <h2>Fotos de Pepe</h2>
+                <div class="info-Img">
+                    <img class="icons" src="../assets/img/LogodeImagen.png" alt="images icon">
+                    <h2>Fotos de Pepe</h2>
+                </div>
+                <BtnEdit text = "Editar" :imagen='imagenSeleccionada' class="edit-Data"></BtnEdit>
             </div>
             
             <div class="gallery">
@@ -21,12 +24,14 @@
 </template>
 
 <script>
-import Foto1 from '../img/Foto1.jpg';
-import Foto2 from '../img/Foto2.jpg';
-import Foto3 from '../img/Foto3.jpg';
-import Foto4 from '../img/Foto4.jpg';
-import Foto5 from '../img/Foto5.jpg';
-import Foto6 from'../img/Foto6.jpg';
+import Foto1 from '../assets/img/Foto1.jpg';
+import Foto2 from '../assets/img/Foto2.jpg';
+import Foto3 from '../assets/img/Foto3.jpg';
+import Foto4 from '../assets/img/Foto4.jpg';
+import Foto5 from '../assets/img/Foto5.jpg';
+import Foto6 from'../assets/img/Foto6.jpg';
+import IconEdit from '../assets/img/editor-de-documentos-negro.png';
+import BtnEdit from './BtnEdit.vue';
 
 export default{
     name: 'ImageGallery',
@@ -40,7 +45,14 @@ export default{
                 Foto5,
                 Foto6
             ],
+            imagenSeleccionada: {
+                    src: IconEdit ,
+                    alt: 'Icono de Editar',
+                },
         };
+    },
+    components: {
+        BtnEdit,
     },
     computed: {
         firstRowImages() {
@@ -50,65 +62,8 @@ export default{
             return this.photos.slice(3,6);
         },
     },
+    
 };
 </script>
 
 
-<style scoped>
-    .userPhotos{
-        width: 45%;
-        padding: 30px 30px;
-        display: flex;
-        background-color: var(--SalmonMedio);
-        flex-direction: column;
-    }
-
-    .userPhotos h2{
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .gallery{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-}
-
-    .firstRowImg, .secondRowImg{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .userPhoto{
-    width: 12vw;
-    height: 12vw;
-    overflow: hidden;
-    padding: 10px;
-    }
-
-    .userPhoto img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .userPhoto:hover img{
-        filter: brightness(0.4);
-    }
-
-    .icons{
-    height: 40px;
-    padding-right: 25px;
-    }
-
-    .titleWithIcon{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.1rem;
-    padding-bottom: 20px;
-    
-}
-</style>

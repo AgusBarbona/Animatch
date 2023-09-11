@@ -1,0 +1,23 @@
+<template>
+<div id="app">
+    <Header />
+    <UserProfile />
+</div>
+</template>
+
+<script>
+import Header from './components/Header.vue';
+import UserProfile from './components/UserProfile.vue';
+
+
+export default {
+    components: {
+        Header,
+        UserProfile
+    },
+};
+</script>
+
+<style lang="scss">
+@import './assets/styles/PerfilUser.scss';
+</style>
