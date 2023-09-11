@@ -6,12 +6,12 @@ import Matchs from '@/components/PerfilesMatch/perfilMatch.vue'
 import IniciarSesion from '@/Login/IniciarSesion.vue';
 import CrearCuenta from '@/Registro/CrearCuenta.vue';
 import Profile from '@/Profile/PerfilUser.vue';
-import Chat from '@/Chat/App.vue';
+import Chat from '@/Chat/ChatApp.vue';
 
 const routes = [
-    { path: '/', component: App },  
+    { path: '/', component: HomePage },  
     { path: '/soport', component: AppSoport },
-    { path: '/home', component: HomePage },
+    //{ path: '/home', component: HomePage },
     { path: '/matchs', component: Matchs },
     { path: '/login', component: IniciarSesion },
     { path: '/registro', component: CrearCuenta },
