@@ -11,7 +11,7 @@
                 en el menor tiempo posible.</p>
         </section> 
         <div class="soport-box">
-            <form id="support-form">
+            <form @submit.prevent="submitForm" id="support-form">
                 <input type="text" v-model="name" placeholder="Nombre y Apellido">
                 <p v-if="errors.name" class="error">{{ errors.name }}</p>
     
@@ -27,81 +27,72 @@
                 <textarea v-model="message" placeholder="Mensaje"></textarea>
                 <p v-if="errors.message" class="error">{{ errors.message }}</p>
     
-                <button @click.prevent="submitForm" class="send">Enviar</button>
+                <button type="submit" class="send">Enviar</button>
             </form>
         </div>
-
     </div>
 </template>
 
 <script>
-    export default {
+import axios from 'axios'; 
+
+export default {
     data() {
         return {
-        name: "",
-        username: "",
-        email: "",
-        subject: "",
-        message: "",
-        errors: {
-            name: null,
-            username: null,
-            email: null,
-            subject: null,
-            message: null
-        }
+            name: "",
+            username: "",
+            email: "",
+            subject: "",
+            message: "",
+            errors: {
+                name: null,
+                username: null,
+                email: null,
+                subject: null,
+                message: null
+            }
         };
     },
     methods: {
-        submitForm() {
-        // Validacion de entradas de usuarios
-        if (!this.name) {
-            this.errors.name = "El nombre y apellido son obligatorios.";
-        } else {
-            this.errors.name = null;
-        }
-    
-        if (!this.username) {
-            this.errors.username = "El usuario es obligatorio.";
-        } else {
-            this.errors.username = null;
-        }
-    
-        if (!this.email || !this.email.includes('@')) {
-            this.errors.email = "El email es inválido o está vacío.";
-        } else {
-            this.errors.email = null;
-        }
-    
-        if (!this.subject) {
-            this.errors.subject = "El asunto es obligatorio.";
-        } else {
-            this.errors.subject = null;
-        }
-    
-        if (!this.message) {
-            this.errors.message = "El mensaje es obligatorio.";
-        } else {
-            this.errors.message = null;
-        }
-    
-        // Condicional si los datos son validos
-        if (!Object.values(this.errors).some(error => error)) {
-            const formData = {
-            name: this.name,
-            username: this.username,
-            email: this.email,
-            subject: this.subject,
-            message: this.message
+        resetForm() {
+            this.name = "";
+            this.username = "";
+            this.email = "";
+            this.subject = "";
+            this.message = "";
+        },
+        async submitForm() {
+            // Validación de entradas de usuarios
+            this.errors = {
+                name: this.name ? null : "El nombre y apellido son obligatorios.",
+                username: this.username ? null : "El usuario es obligatorio.",
+                email:  (this.email && this.email.includes('@') && this.email.includes('.com')) ? null : "El email es inválido o está vacío.",
+                subject: this.subject ? null : "El asunto es obligatorio.",
+                message: this.message ? null : "El mensaje es obligatorio.",
             };
-    
-            console.log(formData);
-          // Aquí es donde procesas el envío del formulario, por ejemplo:
-          // Llamada a una API, enviar datos a otro componente, etc.
-        }
+
+            // Condicional si los datos son validos
+            if (!Object.values(this.errors).some(error => error)) {
+                const formData = {
+                    name: this.name,
+                    username: this.username,
+                    email: this.email,
+                    subject: this.subject,
+                    message: this.message
+                };
+                console.log(formData);
+
+                try {
+                    const response = await axios.post('http://localhost:3000/send-email', formData);
+                    console.log('Response from server:', response.data);
+                    this.resetForm();
+                } catch (error) {
+                    console.error('Error sending form data to server:', error);
+                }
+            }
         }
     }
-    };
+};
 </script>
 
 <style scoped>
