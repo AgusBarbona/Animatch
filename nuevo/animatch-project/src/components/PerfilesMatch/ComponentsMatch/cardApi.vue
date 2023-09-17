@@ -11,6 +11,7 @@
         @mouseup="dragEnd(index)"
         @touchend="dragEnd(index)"
         ref="cards" :style="{ zIndex: Cart.length - index }"
+        
       >
         <img :src="perfil.img" />
         <div class="card-overlay">
@@ -23,7 +24,7 @@
   
   <script>
   export default {
-    props: ['Cart'],
+    props: [ 'Cart'],
     data() {
       return {
         isDragging: false,
@@ -33,13 +34,15 @@
       };
     },
     methods: {
-      dragStart(index, event) {
+      dragStart(index, event) { 
+        
         if (event.type === 'touchstart') {
           this.startPositionX = event.touches[0].clientX;
         } else {
           this.startPositionX = event.clientX;
           event.preventDefault();
         }
+        this.$emit('set-current-card-element', this.$refs.cards[index]);
         this.isDragging = true;
         const card = this.$refs.cards[index];
         card.style.transition = 'none';
