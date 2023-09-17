@@ -27,6 +27,7 @@ app.get("/api", ( req, res) => {
  res.json({ message: "Bienvenido al server"})
 })
 
+require("./app/routes/routes")(app);
 
 app.listen(PORT, () => {
     console.log("server listening on http:\\localhost:${PORT}");
