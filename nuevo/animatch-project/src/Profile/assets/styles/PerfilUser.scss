@@ -101,7 +101,7 @@ main {
 .titleWithIcon {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     font-size: 1.1rem;
     padding-bottom: 20px;
@@ -133,7 +133,7 @@ main {
 .info-Distance {
     display: flex;
     flex-direction: row;
-    justify-items: start;
+    justify-items: flex-start;
     align-items: center;
     font-size: 1.1rem;
 }
@@ -197,7 +197,7 @@ main {
 .info-Img {
     display: flex;
     flex-direction: row;
-    justify-items: start;
+    justify-items: flex-start;
     align-items: center;
     font-size: 1.1rem;
 }

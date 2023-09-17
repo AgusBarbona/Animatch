@@ -1,5 +1,5 @@
 <template>
-  <form action="">
+  <form @submit.prevent="registrarUsuario">
    <div>
           <input type="text" id="name" name="name" placeholder="Nombre" >
   
@@ -15,7 +15,48 @@
    </div> 
   </form>
   </template>
+
   
+<script>
+export default {
+  data() {
+    return {
+      nombre: "",
+      apellido: "",
+      email: "",
+      contraseña: "",
+    };
+  },
+  methods: {
+    async registrarUsuario() {
+      try {
+        const respuesta = await fetch("http://localhost:8080/api/newuser/registro", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: this.nombre,
+            lastname: this.apellido,
+            email: this.email,
+            password: this.contraseña,
+          }),
+        });
+
+        if (respuesta.ok) {
+          console.log("Registro exitoso.");
+          this.$router.push("/login"); // Redirige al usuario a la página de inicio de sesión
+        } else {
+          console.error("Error en el registro.");
+        }
+      } catch (error) {
+        console.error("Error en la solicitud de registro:", error);
+      }
+    },
+  },
+};
+</script>
+
    <style scoped>  
    form {
       background-color: rgba(173, 170, 165, 0.589);
