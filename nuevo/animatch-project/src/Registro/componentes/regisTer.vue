@@ -7,7 +7,7 @@
   
           <input type="email" id="email" name="email" placeholder="Email">
   
-          <input type="password" id="psw" name="psw" placeholder="Contraseña">
+          <input type="password" id="password" name="password" placeholder="Contraseña">
       
           <button type="submit">Crear cuenta</button>
           <router-link to="/login" class="link">o iniciar sesion</router-link>
@@ -21,10 +21,10 @@
 export default {
   data() {
     return {
-      nombre: "",
-      apellido: "",
+      name: "",
+      lastname: "",
       email: "",
-      contraseña: "",
+      password: "",
     };
   },
   methods: {
@@ -36,16 +36,16 @@ export default {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            name: this.nombre,
-            lastname: this.apellido,
+            name: this.name,
+            lastname: this.lastname,
             email: this.email,
-            password: this.contraseña,
+            password: this.password,
           }),
         });
 
         if (respuesta.ok) {
           console.log("Registro exitoso.");
-          this.$router.push("/login"); // Redirige al usuario a la página de inicio de sesión
+          this.$router.push("micuenta"); // Redirige al usuario al perfil
         } else {
           console.error("Error en el registro.");
         }
