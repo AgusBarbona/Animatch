@@ -1,41 +1,28 @@
-
 <template>
-    <div id="button">
-        <button><img src="../img/eliminar.png"></button>
-        <button><img src="../img/favoritos.png"></button>
-    </div>
+  <div id="button">
+    <button @click="eliminarTarjeta">
+      <img src="../img/eliminar.png" alt="butonelim" />
+    </button>
+    <button @click="marcarComoFavorito">
+      <img src="../img/favoritos.png" alt="butonfav" />
+    </button>
+  </div>
 </template>
 
 <script>
-
-export default { 
-    name: 'MatchButton',
-    data () {
-        return{
-            imagenes: [
-                {src: 'eliminar'},
-                {src: 'favoritos'},
-            ]
-        }
+export default {
+  name: 'ButtonMatch',
+  methods: {
+    eliminarTarjeta() {
+      this.$emit('eliminar-tarjeta');
+      console.log('Evento "eliminar-tarjeta" emitido');
+    },
+    marcarComoFavorito() {
+      // Emite un evento personalizado para indicar que se desea marcar la tarjeta como favorita
+      this.$emit('marcar-favorito');
+      console.log('Evento "marcar-favorito" emitido');
     }
-}; 
+}
+};
 </script>
 
-
-<style scoped>
-#button{
-  display: flex;
-  margin-left: 50px;
-  justify-content: center;
-  margin-top: -60px;
-
-}
-button img{
-  width: 48px;
-  height: 50px;
-}
-button{
-  background-color: transparent;  
-  border-radius: 100%;
-}
-</style>
