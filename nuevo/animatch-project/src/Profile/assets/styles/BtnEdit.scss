@@ -1,0 +1,18 @@
+@import './Colors.scss';
+
+.edit-Data{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid gray;
+    background-color: $ColorBlanco;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-Data img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 0.7rem;
+}

@@ -1,0 +1,81 @@
+@import './Colors.scss';
+
+.profileBackground{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    height: 27rem;
+    background: url(../img/FondoDePerfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile{
+    height: 100%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.profile {
+    h1 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: white;
+        padding: 10px 10px;
+        text-align: center;
+    }
+}
+
+.userPhotoProfile{
+    width: 13.5rem;
+    height: 13.5rem;
+    border: 4px solid #FFFFFF;
+    background-color: #DFE5F2;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - auto);
+    z-index: 1;
+}
+
+.userPhotoProfile img {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.btn-portada{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: var(--Blanco);
+    color: black;
+    cursor: pointer;
+}
+
+.btn-portada img{
+    width: 1rem;
+    height: 1rem;
+    padding-right: 1rem;
+}
+
+
+.userPhotoProfile img:hover{
+    filter: brightness(0.5);
+}
+
+@media (max-width: 720px){
+    .profileBackground{
+        height: 34rem;
+    }
+}

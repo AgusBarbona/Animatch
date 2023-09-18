@@ -1,0 +1,23 @@
+@import './Colors.scss';
+
+.btn-profile-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    bottom: -5px;;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-profile-edit img{
+    width: 25px;
+    height: 20px;
+    object-fit: contain;
+}

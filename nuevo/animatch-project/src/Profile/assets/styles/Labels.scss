@@ -1,0 +1,37 @@
+@import './Colors.scss';
+
+.LabelsProfile {
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.label {
+    padding: 7px 15px;
+    margin: 4px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.776);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.IconX{
+    width: 9px;
+    height: 9px;
+    margin-right: 10px;
+    border-radius: 100px;
+    opacity: 0.5;
+}
+
+.IconX:hover{
+    background-color: $ColorGrisTransparente;
+    opacity: 0.7;
+}

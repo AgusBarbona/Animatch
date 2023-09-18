@@ -1,0 +1,58 @@
+@import './Colors.scss';
+
+.userDescription{
+    width: 45%;
+    padding: 30px 30px;
+}
+
+.icons{
+    height: 40px;
+    padding-right: 25px;
+}
+
+.titleWithIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+    
+}
+
+.Line{
+    border-bottom: 2px solid $ColorRojoOscuro;
+}
+
+.userDescription{
+    background-color: $ColorSalmonClaro;
+}
+
+.userDescription h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.titleWithIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.info-Distance{
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 720px){
+    .userDescription{
+        width: 85%;
+    }
+}

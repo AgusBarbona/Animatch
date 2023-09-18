@@ -1,0 +1,321 @@
+@import './main.scss';
+@import './Colors.scss';
+
+body{ 
+    max-width: 100%;
+}
+
+header{
+    height: 20%;
+}
+
+main{
+    height: 70%;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profileBackground{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    height: 27rem;
+    background: url(../img/FondoDePerfil.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile{
+    height: 100%;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.profile {
+    h1 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: white;
+        padding: 10px 10px;
+        text-align: center;
+    }
+}
+
+.userPhotoProfile{
+    width: 13.5rem;
+    height: 13.5rem;
+    border: 4px solid #FFFFFF;
+    background-color: #DFE5F2;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - auto);
+    z-index: 1;
+}
+
+.userPhotoProfile img {
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.btn-portada{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.btn-portada img{
+    width: 1rem;
+    height: 1rem;
+    padding-right: 1rem;
+}
+
+.userPhotoProfile img:hover{
+    filter: brightness(0.5);
+}
+
+.userDescription{
+    width: 45%;
+    padding: 30px 30px;
+}
+
+.icons{
+    height: 40px;
+    padding-right: 25px;
+}
+
+.titleWithIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+    
+}
+
+.Line{
+    border-bottom: 2px solid $ColorRojoOscuro;
+}
+
+.userDescription{
+    background-color: $ColorSalmonClaro;
+}
+
+.userDescription h2{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.titleWithIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.info-Distance{
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.userPhotos{
+    width: 45%;
+    padding: 30px 30px;
+    display: flex;
+    background-color: $ColorSalmonMedio;
+    flex-direction: column;
+}
+
+.userPhotos {
+    h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.firstRowImg, .secondRowImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.userPhoto{
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.userPhoto {
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.userPhoto:hover img{
+    filter: brightness(0.4);
+}
+
+.icons{
+    height: 40px;
+    padding-right: 25px;
+}
+
+.titleWithIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
+.info-Img{
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.LabelsProfile {
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.label {
+    padding: 7px 15px;
+    margin: 4px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.776);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.IconX{
+    width: 9px;
+    height: 9px;
+    margin-right: 10px;
+    border-radius: 100px;
+    opacity: 0.5;
+}
+
+.IconX:hover{
+    background-color: $ColorGrisTransparente;
+    opacity: 0.7;
+}
+
+.edit-Data{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid gray;
+    background-color: $ColorBlanco;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-Data img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-right: 0.7rem;
+}
+
+.btn-profile-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    bottom: -5px;;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-profile-edit img{
+    width: 25px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+@media (max-width: 720px){
+    .profileBackground{
+        height: 34rem;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 20px;
+    }
+
+    .userDescription {
+        width: 85%;
+}
+
+    .gallery{
+        padding-top: 20px;
+    }
+
+    .userPhotos{
+        width: 85%;
+        margin-top: 15px;
+    }
+
+    .userPhoto{
+        width: 20vw;
+        height: 30vw;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+}
+
