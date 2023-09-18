@@ -1,13 +1,13 @@
 <template>
-  <form action="">
+  <form @submit.prevent="registrarUsuario">
    <div>
-          <input type="text" id="name" name="name" placeholder="Nombre" >
+          <input type="text" v-model="name" placeholder="Nombre" >
   
-          <input type="text" id="lastname" name="lastname" placeholder="Apellido">
+          <input type="text" v-model="lastname" placeholder="Apellido">
   
-          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="email" v-model="email" placeholder="Email">
   
-          <input type="password" id="psw" name="psw" placeholder="Contraseña">
+          <input type="password" v-model="password" placeholder="Contraseña">
       
           <button type="submit">Crear cuenta</button>
           <router-link to="/login" class="link">o iniciar sesion</router-link>
@@ -15,7 +15,48 @@
    </div> 
   </form>
   </template>
+
   
+<script>
+export default {
+  data() {
+    return {
+      name: "",
+      lastname: "",
+      email: "",
+      password: "",
+    };
+  },
+  methods: {
+    async registrarUsuario() {
+      try {
+        const respuesta = await fetch("http://localhost:8080/api/newuser/registro", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: this.name,
+            lastname: this.lastname,
+            email: this.email,
+            password: this.password,
+          }),
+        });
+
+        if (respuesta.ok) {
+          console.log("Registro exitoso.");
+          this.$router.push("micuenta"); // Redirige al usuario al perfil
+        } else {
+          console.error("Error en el registro.");
+        }
+      } catch (error) {
+        console.error("Error en la solicitud de registro:", error);
+      }
+    },
+  },
+};
+</script>
+
    <style scoped>  
    form {
       background-color: rgba(173, 170, 165, 0.589);

@@ -9,9 +9,9 @@ import Profile from '@/Profile/PerfilUser.vue';
 import Chat from '@/Chat/ChatApp.vue';
 
 const routes = [
-    { path: '/', component: HomePage },  
+    { path: '/home', component: HomePage },  
     { path: '/soport', component: AppSoport },
-    //{ path: '/home', component: HomePage },
+    { path: '/', component: App },
     { path: '/matchs', component: Matchs },
     { path: '/login', component: IniciarSesion },
     { path: '/registro', component: CrearCuenta },
