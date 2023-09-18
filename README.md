@@ -34,7 +34,7 @@
 <p align="center">
   Agustina Barbona [GitHub](https://github.com/AgusBarbona)<br>
   Ana Zanardi [GitHub](https://github.com/ZanardiAnA)<br>
-  Arleth Cordero [GitHub](https://github.com/Arleth-cordero20)<br>
+  Arleth Cordero <> [GitHub](https://github.com/Arleth-cordero20)<br>
   Daniela Fernandez Laura [GitHub](https://github.com/Ariana-Seok)
 </p>
 
