@@ -83,11 +83,7 @@ export default {
                 console.log(formData);
 
                 try {
-<<<<<<< HEAD
                     const response = await axios.post('http://localhost:3000/send-email', formData);
-=======
-                    const response = await axios.post('http://localhost:8080/send-email', formData);
->>>>>>> 67900fee92bd850bfec7ade92c5d61ff0c9bcd74
                     console.log('Response from server:', response.data);
                     this.resetForm();
                 } catch (error) {
